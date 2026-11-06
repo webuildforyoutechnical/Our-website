@@ -230,3 +230,10 @@ input, select, textarea {
     text-align: center !important;
   }
 }
+
+/* Email & Long Text Overflow Prevention */
+a[href^="mailto:"],
+.break-email {
+  word-break: break-all;
+  overflow-wrap: anywhere;
+}
