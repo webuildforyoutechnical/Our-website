@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  --gold-primary: #D99B26;
+  --gold-light: #F59E0B;
+  --gold-gradient: linear-gradient(135deg, #FDE68A 0%, #F59E0B 50%, #D99B26 100%);
+  --dark-950: #070A0F;
+  --dark-900: #0B0F17;
+  --dark-850: #0F1522;
+  --dark-800: #141D2D;
+  --dark-700: #1B273D;
+  --dark-600: #283854;
+}
+
+/* Base Viewport & Reset */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  max-width: 100vw;
+  width: 100%;
+  touch-action: manipulation;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: -0.025em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #070A0F;
+}
+::-webkit-scrollbar-thumb {
+  background: #1B273D;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D99B26;
+}
+
+/* Gold Gradient Utilities */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #FDE68A 0%, #FBBF24 50%, #D99B26 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #FBBF24 0%, #D99B26 100%);
+}
+
+.gold-glow {
+  box-shadow: 0 4px 20px rgba(217, 155, 38, 0.25);
+}
+.gold-glow:hover {
+  box-shadow: 0 8px 30px rgba(217, 155, 38, 0.4);
+}
+
+/* Navigation Link Underline Animation */
+.nav-link {
+  position: relative;
+  transition: color 0.2s ease;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #D99B26;
+  transition: width 0.25s ease;
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Image Card Hover Zoom (no text overlay boxes) */
+.clean-img-box {
+  overflow: hidden;
+  border-radius: 1.25rem;
+  background-color: #141D2D;
+  position: relative;
+  width: 100%;
+}
+.clean-img-box img {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.clean-img-box:hover img {
+  transform: scale(1.05);
+}
+
+/* Responsive Image Heights */
+@media (max-width: 640px) {
+  .clean-img-box.h-80,
+  .clean-img-box.h-\[380px\],
+  .clean-img-box.h-\[480px\],
+  .clean-img-box.h-\[420px\] {
+    height: 240px !important;
+  }
+  .clean-img-box.h-44,
+  .clean-img-box.h-48 {
+    height: 150px !important;
+  }
+  .clean-img-box.h-64 {
+    height: 200px !important;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .clean-img-box.h-80,
+  .clean-img-box.h-\[380px\],
+  .clean-img-box.h-\[480px\],
+  .clean-img-box.h-\[420px\] {
+    height: 320px !important;
+  }
+}
+
+/* Floating WhatsApp Pulse */
+@keyframes wa-pulse-ring {
+  0% { transform: scale(0.96); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.65); }
+  70% { transform: scale(1); box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
+  100% { transform: scale(0.96); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+.wa-floating-btn {
+  animation: wa-pulse-ring 2.4s infinite;
+}
+
+/* Smooth Scroll Reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Form Input Styles (prevent iOS auto-zoom) */
+input, select, textarea {
+  font-size: 16px !important;
+}
+@media (min-width: 640px) {
+  input, select, textarea {
+    font-size: 0.875rem !important; /* 14px on tablets & desktop */
+  }
+}
+
+/* Mobile Drawer Smooth Transition & Touch Polish */
+#mobileMenu {
+  transition: max-height 0.35s ease, opacity 0.3s ease;
+}
+
+#mobileMenu a {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+/* Floating WhatsApp button responsive sizing & safe-area-inset */
+.wa-floating-btn {
+  animation: wa-pulse-ring 2.4s infinite;
+  z-index: 999;
+}
+
+@media (max-width: 640px) {
+  .wa-floating-btn {
+    width: 54px !important;
+    height: 54px !important;
+    font-size: 1.6rem !important;
+    bottom: calc(1rem + env(safe-area-inset-bottom, 0px)) !important;
+    right: 1rem !important;
+  }
+}
+
+/* Touch Friendly Targets across Mobile */
+@media (max-width: 768px) {
+  button, 
+  a.inline-flex, 
+  a.flex,
+  input, 
+  select, 
+  textarea {
+    touch-action: manipulation;
+  }
+  
+  /* Ensure Hero Action Buttons Fill Width on Small Mobile */
+  .hero-action-btn {
+    width: 100% !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+}
+
+/* Media Query Optimizations for Small Mobile (iPhone SE, Galaxy A, 320px-375px) */
+@media (max-width: 380px) {
+  .hero-buttons a,
+  .hero-action-btn {
+    width: 100% !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+}

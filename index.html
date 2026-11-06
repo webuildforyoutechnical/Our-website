@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>We Build For You Technical Services LLC | Dubai Technical & Fit-Out Services</title>
+  <meta name="description" content="Dubai DET Licensed Technical Services LLC. Professional AC, MEP, Plumbing, Electrical, Painting, Tiling, Carpentry, False Ceiling and General Maintenance across Dubai & UAE." />
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/custom.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: { 400: '#FBBF24', 500: '#D99B26', 600: '#B87B14' },
+            dark: { 950: '#070A0F', 900: '#0B0F17', 850: '#0F1522', 800: '#141D2D', 700: '#1B273D', 600: '#283854' }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-dark-900 text-slate-100 antialiased selection:bg-gold-500 selection:text-dark-900">
+
+  <!-- TOP CREDENTIAL BAR (ClearHome.ae inspiration) -->
+  <div class="bg-dark-950 border-b border-dark-700/60 py-2.5 px-4 text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-4 flex-wrap">
+        <span class="text-slate-300 font-medium flex items-center gap-1.5">
+          <i class="fa-solid fa-certificate text-gold-400"></i> Dubai DET License No. 1584634
+        </span>
+        <span class="hidden sm:inline text-dark-600">|</span>
+        <span class="hidden sm:inline">Commercial Reg. 2775490</span>
+        <span class="hidden md:inline text-dark-600">|</span>
+        <span class="hidden md:inline">Chamber No. 662691</span>
+      </div>
+      <div class="flex items-center gap-5 ml-auto">
+        <a href="tel:+971522765742" class="hover:text-gold-400 transition-colors flex items-center gap-1.5 font-medium text-slate-300">
+          <i class="fa-solid fa-phone text-gold-400"></i> +971 52 276 5742
+        </a>
+        <a href="https://wa.me/971522765742?text=Hello%20We%20Build%20For%20You,%20I%20would%20like%20to%20inquire%20about%20technical%20services" target="_blank" class="text-emerald-400 hover:text-emerald-300 transition-colors flex items-center gap-1.5 font-medium">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN NAVIGATION -->
+  <nav id="mainNavbar" class="sticky top-0 z-50 transition-all duration-300 bg-dark-900/95 backdrop-blur-md border-b border-dark-700/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-5 py-3 sm:py-3.5 flex items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center">
+        <img src="assets/images/logo.png" alt="We Build For You Technical Services LLC" class="h-14 sm:h-16 md:h-20 w-auto object-contain" />
+      </a>
+      
+      <div class="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-300">
+        <a href="index.html" class="nav-link active text-gold-400">Home</a>
+        <a href="about.html" class="nav-link hover:text-gold-400">About Us</a>
+        <a href="services.html" class="nav-link hover:text-gold-400">Services</a>
+        <a href="projects.html" class="nav-link hover:text-gold-400">Projects</a>
+        <a href="contact.html" class="nav-link hover:text-gold-400">Contact</a>
+      </div>
+
+      <div class="hidden lg:flex items-center gap-3">
+        <a href="contact.html" class="bg-gold-gradient text-dark-950 font-bold px-6 py-2.5 rounded-full text-sm gold-glow hover:scale-[1.02] active:scale-[0.98] transition-all">
+          Book Free Survey
+        </a>
+      </div>
+
+      <button id="mobileMenuBtn" class="lg:hidden text-slate-200 hover:text-gold-400 text-2xl p-2 rounded-lg" aria-label="Toggle menu">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu Drawer -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-dark-950 border-b border-dark-700 px-5 py-4">
+      <div class="flex flex-col gap-2 text-base font-semibold">
+        <a href="index.html" class="text-gold-400 py-2.5 px-3 rounded-xl bg-dark-900">Home</a>
+        <a href="about.html" class="text-slate-300 hover:text-gold-400 py-2.5 px-3 rounded-xl hover:bg-dark-900 transition-colors">About Us</a>
+        <a href="services.html" class="text-slate-300 hover:text-gold-400 py-2.5 px-3 rounded-xl hover:bg-dark-900 transition-colors">Services</a>
+        <a href="projects.html" class="text-slate-300 hover:text-gold-400 py-2.5 px-3 rounded-xl hover:bg-dark-900 transition-colors">Projects</a>
+        <a href="contact.html" class="text-slate-300 hover:text-gold-400 py-2.5 px-3 rounded-xl hover:bg-dark-900 transition-colors">Contact</a>
+        <a href="contact.html" class="bg-gold-gradient text-dark-950 text-center font-bold py-3.5 rounded-full mt-2 gold-glow">
+          Book Free Survey
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION (One clean heading, no subtitle glued directly underneath) -->
+  <section class="relative bg-dark-950 pt-16 pb-24 overflow-hidden border-b border-dark-800">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-7 reveal">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.08] mb-6">
+            Dubai's Trusted Technical & Fit-Out Services
+          </h1>
+
+          <p class="text-slate-300 text-base sm:text-lg mb-8 leading-relaxed max-w-xl">
+            Certified technical solutions for villas, apartments, and commercial properties across Dubai &mdash; from AC and MEP works to luxury tiling, painting, and turnkey fit-outs.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 mb-10">
+            <a href="contact.html" class="hero-action-btn bg-gold-gradient text-dark-950 font-extrabold px-8 py-4 rounded-full text-sm gold-glow hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2.5">
+              <span>Book Free Survey</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="services.html" class="hero-action-btn bg-dark-900 hover:bg-dark-850 text-slate-200 hover:text-gold-400 border border-dark-700 hover:border-gold-500/50 font-bold px-8 py-4 rounded-full text-sm hover:scale-105 active:scale-95 transition-all flex items-center justify-center gap-2.5">
+              <span>Explore Services</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+          </div>
+
+          <div class="grid grid-cols-3 gap-3 sm:gap-6 pt-8 border-t border-dark-800/80">
+            <div>
+              <div class="text-xl sm:text-2xl lg:text-3xl font-black text-gold-400 font-heading">2,500+</div>
+              <div class="text-xs text-slate-400 mt-1">Completed Projects</div>
+            </div>
+            <div>
+              <div class="text-xl sm:text-2xl lg:text-3xl font-black text-gold-400 font-heading">10+</div>
+              <div class="text-xs text-slate-400 mt-1">Licensed Services</div>
+            </div>
+            <div>
+              <div class="text-xl sm:text-2xl lg:text-3xl font-black text-gold-400 font-heading">30-Day</div>
+              <div class="text-xs text-slate-400 mt-1">Service Warranty</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Images (Clean, architectural, NO overlaid text boxes) -->
+        <div class="lg:col-span-5 reveal">
+          <div class="grid grid-cols-2 gap-3.5">
+            <div class="clean-img-box h-80 col-span-2">
+              <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=700&q=80" alt="Technical maintenance in Dubai" />
+            </div>
+            <div class="clean-img-box h-44">
+              <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=500&q=80" alt="Electromechanical MEP services" />
+            </div>
+            <div class="clean-img-box h-44">
+              <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=500&q=80" alt="Sanitary and plumbing fitout" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION (One clean heading, no subtitle underneath, clean cards) -->
+  <section class="py-24 bg-dark-900 border-b border-dark-800">
+    <div class="max-w-7xl mx-auto px-5">
+      <h2 class="text-3xl md:text-5xl font-black text-white text-center mb-14">
+        Our Technical Services
+      </h2>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
+        
+        <!-- Service 1: AC -->
+        <div class="bg-dark-850 border border-dark-700/70 rounded-2xl p-7 hover:border-gold-500/50 hover:-translate-y-1.5 transition-all group reveal">
+          <div class="w-14 h-14 rounded-xl bg-gold-500/10 border border-gold-500/20 flex items-center justify-center text-gold-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-snowflake"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-4">Air Conditioning & Ventilation</h3>
+          <ul class="space-y-2.5 text-sm text-slate-300 mb-6">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-400 text-xs"></i> Split, ducted & central AC installation</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-400 text-xs"></i> Gas refilling, compressor & leak checks</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-400 text-xs"></i> AC coil & duct sanitization</li>
+          </ul>
+          <a href="services.html#ac" class="inline-flex items-center gap-2 text-sm font-semibold text-gold-400 hover:text-gold-300">
+            <span>Learn More</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+
+        <!-- Service 2: Electromechanical MEP -->
+        <div class="bg-dark-850 border border-dark-700/70 rounded-2xl p-7 hover:border-gold-500/50 hover:-translate-y-1.5 transition-all group reveal">
+          <div class="w-14 h-14 rounded-xl bg-gold-500/10 border border-gold-500/20 flex items-center justify-center text-gold-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-bolt-lightning"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-4">Electromechanical (MEP)</h3>
+          <ul class="space-y-2.5 text-sm text-slate-300 mb-6">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-400 text-xs"></i> DB board upgrades & load balancing</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-400 text-xs"></i> Power distribution & industrial machinery</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-400 text-xs"></i> DEWA compliance & electrical safety</li>
+          </ul>
+          <a href="services.html#mep" class="inline-flex items-center gap-2 text-sm font-semibold text-gold-400 hover:text-gold-300">
+            <span>Learn More</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+
+        <!-- Service 3: Plumbing -->
+        <div class="bg-dark-850 border border-dark-700/70 rounded-2xl p-7 hover:border-gold-500/50 hover:-translate-y-1.5 transition-all group reveal">
+          <div class="w-14 h-14 rounded-xl bg-gold-500/10 border border-gold-500/20 flex items-center justify-center text-gold-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-faucet-drip"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-4">Plumbing & Sanitary Works</h3>
+          <ul class="space-y-2.5 text-sm text-slate-300 mb-6">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-400 text-xs"></i> Emergency leak repair & drain clearance</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-400 text-xs"></i> Water heater & pressure pump servicing</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-400 text-xs"></i> Luxury bathroom sanitary fixture fitting</li>
+          </ul>
+          <a href="services.html#plumbing" class="inline-flex items-center gap-2 text-sm font-semibold text-gold-400 hover:text-gold-300">
+            <span>Learn More</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+
+        <!-- Service 4: Floor & Wall Tiling -->
+        <div class="bg-dark-850 border border-dark-700/70 rounded-2xl p-7 hover:border-gold-500/50 hover:-translate-y-1.5 transition-all group reveal">
+          <div class="w-14 h-14 rounded-xl bg-gold-500/10 border border-gold-500/20 flex items-center justify-center text-gold-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-layer-group"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-4">Floor & Wall Tiling</h3>
+          <ul class="space-y-2.5 text-sm text-slate-300 mb-6">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-400 text-xs"></i> Italian porcelain & Spanish ceramic tiling</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-400 text-xs"></i> Natural marble cutting & polishing</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-400 text-xs"></i> Outdoor patio & pool surround tiling</li>
+          </ul>
+          <a href="services.html#tiling" class="inline-flex items-center gap-2 text-sm font-semibold text-gold-400 hover:text-gold-300">
+            <span>Learn More</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+
+        <!-- Service 5: Painting -->
+        <div class="bg-dark-850 border border-dark-700/70 rounded-2xl p-7 hover:border-gold-500/50 hover:-translate-y-1.5 transition-all group reveal">
+          <div class="w-14 h-14 rounded-xl bg-gold-500/10 border border-gold-500/20 flex items-center justify-center text-gold-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-paint-roller"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-4">Painting Contracting</h3>
+          <ul class="space-y-2.5 text-sm text-slate-300 mb-6">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-400 text-xs"></i> Interior & exterior villa repainting</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-400 text-xs"></i> Odorless premium Jotun luxury paints</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-400 text-xs"></i> Move-in / move-out quick handover</li>
+          </ul>
+          <a href="services.html#painting" class="inline-flex items-center gap-2 text-sm font-semibold text-gold-400 hover:text-gold-300">
+            <span>Learn More</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+
+        <!-- Service 6: Carpentry & Flooring -->
+        <div class="bg-dark-850 border border-dark-700/70 rounded-2xl p-7 hover:border-gold-500/50 hover:-translate-y-1.5 transition-all group reveal">
+          <div class="w-14 h-14 rounded-xl bg-gold-500/10 border border-gold-500/20 flex items-center justify-center text-gold-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-hammer"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-4">Carpentry & Wood Flooring</h3>
+          <ul class="space-y-2.5 text-sm text-slate-300 mb-6">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-400 text-xs"></i> Custom kitchen cabinets & wardrobes</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-400 text-xs"></i> Parquet & SPC wooden flooring</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-gold-400 text-xs"></i> Solid wood door fitting & lock alignment</li>
+          </ul>
+          <a href="services.html#carpentry" class="inline-flex items-center gap-2 text-sm font-semibold text-gold-400 hover:text-gold-300">
+            <span>Learn More</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="services.html" class="inline-flex items-center gap-3 bg-dark-800 hover:bg-dark-700 border border-dark-600 text-white font-bold px-8 py-3.5 rounded-full text-sm transition-all">
+          <span>View All 10 Licensed Services</span>
+          <i class="fa-solid fa-arrow-right text-gold-400"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTANT DUBAI COST ESTIMATOR (Interactive, One clean heading) -->
+  <section class="py-20 bg-dark-950 border-b border-dark-800">
+    <div class="max-w-4xl mx-auto px-5">
+      <h2 class="text-3xl md:text-4xl font-black text-white text-center mb-12">
+        Instant Service Cost Estimator
+      </h2>
+
+      <div class="bg-dark-900 border border-dark-700/90 rounded-3xl p-8 sm:p-10 shadow-2xl reveal">
+        <div class="grid sm:grid-cols-2 gap-6 mb-8">
+          <div>
+            <label class="block text-xs uppercase tracking-wider text-slate-400 font-semibold mb-2">Select Service</label>
+            <select id="calcService" class="w-full bg-dark-850 border border-dark-700 text-white rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-gold-500">
+              <option value="ac">Air Conditioning Servicing & Repair</option>
+              <option value="mep">Electromechanical (MEP) Maintenance</option>
+              <option value="plumbing">Plumbing & Sanitary Works</option>
+              <option value="tiling">Floor & Wall Tiling</option>
+              <option value="painting">Painting Contracting</option>
+              <option value="carpentry">Carpentry & Wood Flooring</option>
+              <option value="false-ceiling">False Ceiling & Partitions</option>
+              <option value="cleaning">Building Deep Cleaning</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs uppercase tracking-wider text-slate-400 font-semibold mb-2">Property Type</label>
+            <select id="calcProperty" class="w-full bg-dark-850 border border-dark-700 text-white rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-gold-500">
+              <option value="villa">Luxury Villa / Townhouse</option>
+              <option value="apt">Apartment / Penthouse</option>
+              <option value="commercial">Commercial Office / Retail</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="mb-8">
+          <div class="flex justify-between items-center mb-2">
+            <label class="text-xs uppercase tracking-wider text-slate-400 font-semibold">Approximate Area / Size</label>
+            <span id="calcSizeValue" class="text-gold-400 font-bold text-sm">1,500 Sq. Ft.</span>
+          </div>
+          <input id="calcSize" type="range" min="300" max="8000" step="100" value="1500" class="w-full accent-gold-500 cursor-pointer h-2 bg-dark-800 rounded-lg" />
+        </div>
+
+        <div class="bg-dark-950 border border-dark-700/80 rounded-2xl p-6 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div>
+            <div class="text-xs uppercase tracking-wider text-slate-400 mb-1">Estimated Dubai Price Range</div>
+            <div id="estimateResult" class="text-2xl sm:text-3xl font-black text-gold-400 font-heading">
+              AED 600 - 850
+            </div>
+            <div class="text-xs text-slate-500 mt-1">*Final quotation confirmed after free on-site survey</div>
+          </div>
+
+          <a id="sendEstimateWhatsapp" href="#" target="_blank" class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold px-7 py-3.5 rounded-full text-sm flex items-center justify-center gap-2.5 transition-all">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            <span>Confirm On WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY PROPERTY OWNERS CHOOSE US (One clean heading, no subtitle) -->
+  <section class="py-24 bg-dark-900 border-b border-dark-800">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 reveal">
+          <h2 class="text-3xl md:text-5xl font-black text-white leading-tight mb-10">
+            Why Property Owners Across Dubai Choose Us
+          </h2>
+
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-gold-500/10 border border-gold-500/20 flex items-center justify-center text-gold-400 text-xl flex-shrink-0">
+                <i class="fa-solid fa-stamp"></i>
+              </div>
+              <div>
+                <h4 class="text-lg font-bold text-white mb-1">Government Licensed Technical LLC</h4>
+                <p class="text-sm text-slate-400 leading-relaxed">Operate with full peace of mind. We hold official Dubai Department of Economy & Tourism License #1584634 and Chamber Registration #662691.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-gold-500/10 border border-gold-500/20 flex items-center justify-center text-gold-400 text-xl flex-shrink-0">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+              </div>
+              <div>
+                <h4 class="text-lg font-bold text-white mb-1">Transparent & Fixed Invoicing</h4>
+                <p class="text-sm text-slate-400 leading-relaxed">No hidden trip charges or sudden markups. You receive an itemized, approved quotation prior to the start of any job.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-gold-500/10 border border-gold-500/20 flex items-center justify-center text-gold-400 text-xl flex-shrink-0">
+                <i class="fa-solid fa-shield-virus"></i>
+              </div>
+              <div>
+                <h4 class="text-lg font-bold text-white mb-1">Workmanship Guarantee</h4>
+                <p class="text-sm text-slate-400 leading-relaxed">Every installation, repair, and fit-out job carries our 30-day dedicated warranty. If anything needs touch-up, our team returns at zero cost.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-gold-500/10 border border-gold-500/20 flex items-center justify-center text-gold-400 text-xl flex-shrink-0">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              <div>
+                <h4 class="text-lg font-bold text-white mb-1">All Dubai Communities Covered</h4>
+                <p class="text-sm text-slate-400 leading-relaxed">Mobile technical teams stationed across Palm Jumeirah, Downtown, Dubai Marina, Business Bay, Arabian Ranches, JVC, and UAE wide.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 reveal">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="clean-img-box h-80 col-span-2">
+              <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=900&q=80" alt="Dubai technical service supervisor" />
+            </div>
+            <div class="clean-img-box h-48 col-span-2">
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=500&q=80" alt="Quality execution in Dubai" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW WE WORK (One clean heading, no subtitle) -->
+  <section class="py-24 bg-dark-950 border-b border-dark-800">
+    <div class="max-w-7xl mx-auto px-5">
+      <h2 class="text-3xl md:text-5xl font-black text-white text-center mb-16">
+        How We Work
+      </h2>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        
+        <div class="bg-dark-900 border border-dark-800 rounded-2xl p-7 text-center reveal">
+          <div class="w-14 h-14 rounded-full bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 font-black text-xl mx-auto mb-5 font-heading">
+            01
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">Request Survey</h4>
+          <p class="text-sm text-slate-400 leading-relaxed">Send your requirement via WhatsApp or our instant inquiry form.</p>
+        </div>
+
+        <div class="bg-dark-900 border border-dark-800 rounded-2xl p-7 text-center reveal">
+          <div class="w-14 h-14 rounded-full bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 font-black text-xl mx-auto mb-5 font-heading">
+            02
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">On-Site Inspection</h4>
+          <p class="text-sm text-slate-400 leading-relaxed">Certified Dubai technician conducts a thorough evaluation at your premises.</p>
+        </div>
+
+        <div class="bg-dark-900 border border-dark-800 rounded-2xl p-7 text-center reveal">
+          <div class="w-14 h-14 rounded-full bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 font-black text-xl mx-auto mb-5 font-heading">
+            03
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">Fixed Quotation</h4>
+          <p class="text-sm text-slate-400 leading-relaxed">Receive a clear, transparent scope of work and exact price before commencement.</p>
+        </div>
+
+        <div class="bg-dark-900 border border-dark-800 rounded-2xl p-7 text-center reveal">
+          <div class="w-14 h-14 rounded-full bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 font-black text-xl mx-auto mb-5 font-heading">
+            04
+          </div>
+          <h4 class="text-lg font-bold text-white mb-2">Pristine Execution</h4>
+          <p class="text-sm text-slate-400 leading-relaxed">Flawless technical delivery, full post-cleanup, and 30-day warranty coverage.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED DUBAI PROJECTS (One clean heading, NO text boxes on images) -->
+  <section class="py-24 bg-dark-900 border-b border-dark-800">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+        <h2 class="text-3xl md:text-5xl font-black text-white">
+          Featured Dubai Projects
+        </h2>
+        <a href="projects.html" class="inline-flex items-center gap-2 text-gold-400 hover:text-gold-300 font-bold text-sm">
+          <span>View All Completed Projects</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- Project 1 -->
+        <div class="bg-dark-850 border border-dark-700/80 rounded-2xl overflow-hidden reveal">
+          <div class="clean-img-box h-64 rounded-none">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="Palm Jumeirah luxury villa technical renovation" />
+          </div>
+          <div class="p-6">
+            <div class="text-xs uppercase tracking-wider text-gold-400 font-semibold mb-2">Palm Jumeirah &middot; Luxury Villa</div>
+            <h3 class="text-xl font-bold text-white mb-2">Full MEP, Ducted AC & Marble Tiling Overhaul</h3>
+            <p class="text-sm text-slate-400">Complete HVAC system upgrade, chilled water lines overhaul, and Italian porcelain flooring across 6,500 sq. ft.</p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-dark-850 border border-dark-700/80 rounded-2xl overflow-hidden reveal">
+          <div class="clean-img-box h-64 rounded-none">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Downtown Dubai penthouse fitout" />
+          </div>
+          <div class="p-6">
+            <div class="text-xs uppercase tracking-wider text-gold-400 font-semibold mb-2">Downtown Dubai &middot; Penthouse</div>
+            <h3 class="text-xl font-bold text-white mb-2">False Ceiling, LED Cove & Interior Painting</h3>
+            <p class="text-sm text-slate-400">Architectural gypsum ceiling integration, smart lighting circuitry, and Jotun Fenomastic interior paint finishes.</p>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="bg-dark-850 border border-dark-700/80 rounded-2xl overflow-hidden reveal">
+          <div class="clean-img-box h-64 rounded-none">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="Business Bay corporate office fitout" />
+          </div>
+          <div class="p-6">
+            <div class="text-xs uppercase tracking-wider text-gold-400 font-semibold mb-2">Business Bay &middot; Executive Office</div>
+            <h3 class="text-xl font-bold text-white mb-2">Acoustic Partitions, MEP & Joinery Works</h3>
+            <p class="text-sm text-slate-400">Commercial light partition walls, DB distribution panel upgrades, and custom reception woodwork.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS (One clean heading, no subtitle) -->
+  <section class="py-24 bg-dark-950 border-b border-dark-800">
+    <div class="max-w-7xl mx-auto px-5">
+      <h2 class="text-3xl md:text-5xl font-black text-white text-center mb-16">
+        Verified Client Reviews
+      </h2>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <div class="bg-dark-900 border border-dark-700/80 rounded-2xl p-8 reveal">
+          <div class="flex text-gold-400 text-sm gap-1 mb-5">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            "We Build For You handled our villa's AC duct cleaning and emergency plumbing in Palm Jumeirah. The technician team was prompt, completely professional, and left the place immaculate."
+          </p>
+          <div class="border-t border-dark-800 pt-4">
+            <div class="font-bold text-white text-sm">Tariq Al Hashemi</div>
+            <div class="text-xs text-slate-400">Palm Jumeirah, Dubai</div>
+          </div>
+        </div>
+
+        <div class="bg-dark-900 border border-dark-700/80 rounded-2xl p-8 reveal">
+          <div class="flex text-gold-400 text-sm gap-1 mb-5">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            "Fixed quotation, no surprises, and completed our apartment painting and false ceiling work two days ahead of schedule. Best technical services company we've used in Dubai."
+          </p>
+          <div class="border-t border-dark-800 pt-4">
+            <div class="font-bold text-white text-sm">Charlotte Davies</div>
+            <div class="text-xs text-slate-400">Dubai Marina Resident</div>
+          </div>
+        </div>
+
+        <div class="bg-dark-900 border border-dark-700/80 rounded-2xl p-8 reveal">
+          <div class="flex text-gold-400 text-sm gap-1 mb-5">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            "Their MEP team solved an electrical tripping fault in our commercial showroom that two other contractors failed to diagnose. Highly recommended for commercial property managers."
+          </p>
+          <div class="border-t border-dark-800 pt-4">
+            <div class="font-bold text-white text-sm">Rajesh Varma</div>
+            <div class="text-xs text-slate-400">Business Bay Property Manager</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COVERAGE (One clean heading, no subtitle) -->
+  <section class="py-20 bg-dark-900 border-b border-dark-800">
+    <div class="max-w-7xl mx-auto px-5 text-center">
+      <h2 class="text-3xl md:text-4xl font-black text-white mb-10">
+        Areas We Serve Across Dubai & UAE
+      </h2>
+
+      <div class="flex flex-wrap justify-center gap-3 max-w-5xl mx-auto reveal">
+        <span class="bg-dark-850 border border-dark-700 text-slate-300 text-sm px-5 py-2.5 rounded-full">Palm Jumeirah</span>
+        <span class="bg-dark-850 border border-dark-700 text-slate-300 text-sm px-5 py-2.5 rounded-full">Downtown Dubai</span>
+        <span class="bg-dark-850 border border-dark-700 text-slate-300 text-sm px-5 py-2.5 rounded-full">Dubai Marina</span>
+        <span class="bg-dark-850 border border-dark-700 text-slate-300 text-sm px-5 py-2.5 rounded-full">Business Bay</span>
+        <span class="bg-dark-850 border border-dark-700 text-slate-300 text-sm px-5 py-2.5 rounded-full">Dubai Hills Estate</span>
+        <span class="bg-dark-850 border border-dark-700 text-slate-300 text-sm px-5 py-2.5 rounded-full">Arabian Ranches</span>
+        <span class="bg-dark-850 border border-dark-700 text-slate-300 text-sm px-5 py-2.5 rounded-full">Jumeirah Village Circle (JVC)</span>
+        <span class="bg-dark-850 border border-dark-700 text-slate-300 text-sm px-5 py-2.5 rounded-full">Jumeirah Beach Residence (JBR)</span>
+        <span class="bg-dark-850 border border-dark-700 text-slate-300 text-sm px-5 py-2.5 rounded-full">Al Barsha</span>
+        <span class="bg-dark-850 border border-dark-700 text-slate-300 text-sm px-5 py-2.5 rounded-full">Jumeirah 1, 2 & 3</span>
+        <span class="bg-dark-850 border border-dark-700 text-slate-300 text-sm px-5 py-2.5 rounded-full">DIFC</span>
+        <span class="bg-dark-850 border border-dark-700 text-slate-300 text-sm px-5 py-2.5 rounded-full">Mirdif</span>
+        <span class="bg-dark-850 border border-dark-700 text-slate-300 text-sm px-5 py-2.5 rounded-full">Bur Dubai</span>
+        <span class="bg-dark-850 border border-dark-700 text-slate-300 text-sm px-5 py-2.5 rounded-full">Deira</span>
+        <span class="bg-dark-850 border border-dark-700 text-slate-300 text-sm px-5 py-2.5 rounded-full">Dubai South</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER (One clean heading, no subtitle) -->
+  <section class="py-20 bg-dark-950">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="bg-gold-gradient rounded-3xl p-10 sm:p-14 text-center reveal">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-dark-950 mb-8">
+          Book Your Free Technical Survey Today
+        </h2>
+
+        <div class="flex flex-wrap items-center justify-center gap-4">
+          <a href="contact.html" class="bg-dark-950 text-white font-black px-9 py-4 rounded-full text-sm hover:bg-dark-900 transition-all">
+            Schedule Survey Online
+          </a>
+          <a href="tel:+971522765742" class="bg-white/90 hover:bg-white text-dark-950 font-black px-9 py-4 rounded-full text-sm transition-all flex items-center gap-2">
+            <i class="fa-solid fa-phone text-gold-600 text-base"></i>
+            <span>Call +971 52 276 5742</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark-950 border-t border-dark-800 pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-5">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-dark-800">
+        
+        <!-- Col 1: Brand & Licensing (5 cols) -->
+        <div class="lg:col-span-5">
+          <img src="assets/images/logo.png" alt="We Build For You Technical Services LLC" class="h-24 md:h-28 w-auto object-contain mb-6" />
+          <p class="text-sm text-slate-400 leading-relaxed mb-5 max-w-sm">
+            Licensed technical contracting company delivering residential, commercial, and turnkey fit-out solutions across Dubai and the UAE.
+          </p>
+          <div class="text-xs text-gold-400 font-semibold space-y-1.5">
+            <div><span class="text-slate-500 font-normal">Trade License No:</span> 1584634 (Dubai DET)</div>
+            <div><span class="text-slate-500 font-normal">Commercial Register:</span> 2775490</div>
+            <div><span class="text-slate-500 font-normal">Chamber of Commerce:</span> 662691</div>
+          </div>
+        </div>
+
+        <!-- Col 2: Services (3 cols) -->
+        <div class="lg:col-span-3">
+          <h4 class="text-sm font-bold uppercase tracking-wider text-white mb-5 font-heading">Licensed Services</h4>
+          <ul class="space-y-2.5 text-sm text-slate-400">
+            <li><a href="services.html#ac" class="hover:text-gold-400 transition-colors">AC & Ventilation</a></li>
+            <li><a href="services.html#mep" class="hover:text-gold-400 transition-colors">Electromechanical (MEP)</a></li>
+            <li><a href="services.html#plumbing" class="hover:text-gold-400 transition-colors">Plumbing & Sanitary</a></li>
+            <li><a href="services.html#tiling" class="hover:text-gold-400 transition-colors">Floor & Wall Tiling</a></li>
+            <li><a href="services.html#painting" class="hover:text-gold-400 transition-colors">Painting Contracting</a></li>
+            <li><a href="services.html#carpentry" class="hover:text-gold-400 transition-colors">Carpentry & Wood Flooring</a></li>
+            <li><a href="services.html" class="text-gold-400 hover:text-gold-300 font-medium pt-1 inline-block">View All 10 Services &rarr;</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Dubai Office & Direct Contact (4 cols) -->
+        <div class="lg:col-span-4">
+          <h4 class="text-sm font-bold uppercase tracking-wider text-white mb-5 font-heading">Dubai Head Office</h4>
+          <ul class="space-y-3.5 text-sm text-slate-400">
+            <li class="flex items-start gap-3">
+              <i class="fa-solid fa-location-dot text-gold-400 mt-1 flex-shrink-0"></i>
+              <span>Office 16, F-A-42, Fayadh Kul Khan Building, Al Khaleej Al Tijari, Bur Dubai, Dubai, UAE</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-phone text-gold-400 flex-shrink-0"></i>
+              <a href="tel:+971522765742" class="hover:text-gold-400 transition-colors font-medium text-white">+971 52 276 5742</a>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fa-solid fa-envelope text-gold-400 flex-shrink-0"></i>
+              <a href="mailto:webuildforyoutechnical@gmail.com" class="hover:text-gold-400 transition-colors">webuildforyoutechnical@gmail.com</a>
+            </li>
+            <li class="flex items-start gap-3 text-xs text-slate-400 border-t border-dark-800 pt-3 mt-3">
+              <i class="fa-solid fa-clock text-gold-400 mt-0.5 flex-shrink-0"></i>
+              <span>Saturday &ndash; Thursday: 8:00 AM &ndash; 7:00 PM<br/>Friday: 9:00 AM &ndash; 5:00 PM</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+        <div>
+          &copy; 2026 WE BUILD FOR YOU TECHNICAL SERVICES L.L.C (وي بيلد فور يو للخدمات الفنية ش.ذ.م.م). All rights reserved.
+        </div>
+        <div>
+          Bur Dubai, Dubai, United Arab Emirates
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/971522765742?text=Hello%20We%20Build%20For%20You,%20I%20need%20technical%20services%20in%20Dubai" target="_blank" class="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-50 w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-emerald-500 text-white flex items-center justify-center text-2xl sm:text-3xl shadow-2xl wa-floating-btn hover:scale-110 active:scale-95 transition-all" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- SCRIPTS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
