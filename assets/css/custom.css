@@ -250,3 +250,27 @@ a[href^="mailto:"],
   word-break: break-all;
   overflow-wrap: anywhere;
 }
+
+/* Pinterest-style Masonry Grid for Projects (No Awkward Gaps, 100% Original Ratio) */
+.masonry-grid {
+  column-count: 1;
+  column-gap: 1.5rem;
+}
+@media (min-width: 640px) {
+  .masonry-grid {
+    column-count: 2;
+  }
+}
+@media (min-width: 1024px) {
+  .masonry-grid {
+    column-count: 3;
+  }
+}
+.project-card {
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+  -webkit-column-break-inside: avoid !important;
+  display: inline-block !important;
+  width: 100% !important;
+  margin-bottom: 1.5rem !important;
+}

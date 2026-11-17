@@ -1,10 +1,9 @@
-// Main JavaScript for WE BUILD FOR YOU TECHNICAL SERVICES L.L.C
 
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Mobile Menu Toggle with Icon Animation & Auto-Close
   const mobileMenuBtn = document.getElementById('mobileMenuBtn');
   const mobileMenu = document.getElementById('mobileMenu');
-  
+
   if (mobileMenuBtn && mobileMenu) {
     const icon = mobileMenuBtn.querySelector('i');
 
@@ -110,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let base = rateData[selectedProp] || 450;
     let estimatedTotal = Math.round(base + (size * rateData.ratePerSqFt));
-    
+
     let minRange = Math.round(estimatedTotal * 0.9);
     let maxRange = Math.round(estimatedTotal * 1.15);
 
@@ -160,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 5. Contact Form Pre-Selection & Submission
   const contactForm = document.getElementById('technicalContactForm');
   const serviceDropdown = document.getElementById('clientService');
-  
+
   // Pre-select service from URL parameter (e.g. ?service=ac)
   if (serviceDropdown) {
     const urlParams = new URLSearchParams(window.location.search);
@@ -209,7 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
       );
 
       window.open(`https://wa.me/971522765742?text=${waText}`, '_blank');
-      
+
       const formAlert = document.getElementById('formSuccessAlert');
       if (formAlert) {
         formAlert.classList.remove('hidden');
@@ -224,9 +223,9 @@ document.addEventListener('DOMContentLoaded', () => {
     header.addEventListener('click', () => {
       const content = header.nextElementSibling;
       const icon = header.querySelector('.accordion-icon');
-      
+
       const isOpen = !content.classList.contains('hidden');
-      
+
       // Close all
       document.querySelectorAll('.accordion-content').forEach(c => c.classList.add('hidden'));
       document.querySelectorAll('.accordion-icon').forEach(i => i.style.transform = 'rotate(0deg)');
