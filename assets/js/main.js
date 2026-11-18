@@ -99,8 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'painting': { apt: 450, villa: 900, commercial: 1400, ratePerSqFt: 0.75 },
       'carpentry': { apt: 350, villa: 700, commercial: 1100, ratePerSqFt: 0.60 },
       'wallpaper': { apt: 300, villa: 600, commercial: 900, ratePerSqFt: 0.50 },
-      'false-ceiling': { apt: 500, villa: 1000, commercial: 1600, ratePerSqFt: 0.95 },
-      'cleaning': { apt: 180, villa: 350, commercial: 500, ratePerSqFt: 0.10 }
+      'false-ceiling': { apt: 500, villa: 1000, commercial: 1600, ratePerSqFt: 0.95 }
     };
 
     const selectedService = serviceSelect.value || 'ac';
@@ -121,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const msg = encodeURIComponent(
         `Hello We Build For You Technical Services LLC!\nI calculated an estimate on your website:\n- Service: ${serviceName}\n- Property: ${propName}\n- Approximate Area: ${size.toLocaleString()} Sq. Ft.\n- Estimated Range: AED ${minRange.toLocaleString()} - AED ${maxRange.toLocaleString()}\nPlease schedule a free on-site survey.`
       );
-      sendEstimateBtn.href = `https://wa.me/971522765742?text=${msg}`;
+      sendEstimateBtn.href = `https://wa.me/971527657428?text=${msg}`;
     }
   }
 
@@ -176,7 +175,6 @@ document.addEventListener('DOMContentLoaded', () => {
         'false-ceiling': 'False Ceiling & Partitions',
         'ceiling': 'False Ceiling & Partitions',
         'plaster': 'Plaster Works',
-        'cleaning': 'Building Cleaning Services',
         'fitout': 'Turnkey Full Fit-Out'
       };
       const targetVal = serviceMapping[serviceParam.toLowerCase()];
@@ -207,7 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `Please confirm survey schedule.`
       );
 
-      window.open(`https://wa.me/971522765742?text=${waText}`, '_blank');
+      window.open(`https://wa.me/971527657428?text=${waText}`, '_blank');
 
       const formAlert = document.getElementById('formSuccessAlert');
       if (formAlert) {
